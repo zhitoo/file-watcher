@@ -30,4 +30,20 @@ uv tool uninstall file-watcher
 ## How can i use it
 ```bash
 file-watcher --command "type your command here"
+```
 
+## Run in backgroud?
+```
+touch .watcherignore
+```
+
+add watcher.log to .watcherignore file
+
+```
+nohup file-watcher --command "your command" > watcher.log 2>&1 &
+```
+
+## Kill backgroud proccess
+```bash
+killall file-watcher
+```
